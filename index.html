@@ -1,7 +1,50 @@
 <!DOCTYPE html>
+
+<head>
+    <script type="module" src="https://unpkg.com/chessboard-element?module"></script>
+    <link rel="stylesheet" href="site.css">
+</head>
+
+
+<style>
+    #board {
+        margin: auto;
+        width: 60%;
+    }
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20%;
+    }
+
+</style>
+
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <body>
+        <div style="text-align:center">
+            <h1>Zane Durante's Personal Website</h1>
+            <p>I plan to post unique kinds of chess puzzles here!</p>
+        </div>
+        <div>
+            <chess-board id="board"
+                draggable-pieces
+                spare-pieces
+                drop-off-board="trash">
+            </chess-board>
+        </div>
+        <div class="btn-group-vertical"> 
+            <button id="startBtn">Start Position</button>
+            <button id="clearBtn">Clear Board</button>
+            </div> 
+
+    </body>
 </html>
+
+<script>
+    startBtn.addEventListener('click',
+        () => board.start());
+        
+    clearBtn.addEventListener('click',
+        () => board.clear());
+</script>
