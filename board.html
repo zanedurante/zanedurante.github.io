@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <script type="module" src="https://unpkg.com/chessboard-element?module"></script>
+    <link rel="stylesheet" href="site.css">
+</head>
+
+
+<style>
+    #board {
+        margin: auto;
+        width: 60%;
+        max-width: 500px;
+    }
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20%;
+    }
+
+</style>
+
+<html>
+    <body>
+        <div style="text-align:center">
+            <h1>Zane's Chess Hub</h1>
+            <p>You can setup this board however you like, below the board, the FEN string of the board state is shown.</p>
+        </div>
+        <div>
+            <chess-board id="board"
+                draggable-pieces
+                spare-pieces
+                drop-off-board="trash">
+            </chess-board>
+        </div>
+        <h4 style="text-align:center;">
+            Board position: <a id="pos_fen"></a>
+        </h4>
+        <div class="btn-group-vertical"> 
+            <button id="getBtn">Get Position</button>
+            <button id="clearBtn">Clear Board</button>
+            </div> 
+
+    </body>
+</html>
+
+<script>
+    document.getElementById("pos_fen").innerHTML = "8/8/8/8/8/8/8/8";
+
+    getBtn.addEventListener('click',
+        () => document.getElementById("pos_fen").innerHTML = board.fen());
+        
+    clearBtn.addEventListener('click',
+        () => board.clear());
+</script>
