@@ -40,7 +40,9 @@
         <div class="btn-group-vertical"> 
             <button id="getBtn">Get Position</button>
             <button id="clearBtn">Clear Board</button>
-            </div> 
+        </div><div class="btn-group-vertical"> 
+            <button id="flipBtn">Flip Board</button>
+        </div> 
 
     </body>
 </html>
@@ -53,4 +55,7 @@
         
     clearBtn.addEventListener('click',
         () => board.clear());
+
+    flipBtn.addEventListener('click',
+        () => board.flip());
 </script>
