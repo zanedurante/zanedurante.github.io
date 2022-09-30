@@ -26,7 +26,7 @@
         <div style="text-align:center">
             <h1>Zane's Chess Hub</h1>
             <p>The rooks puzzle -- for each board position, try to figure out the "best" placement of the rooks.  The answer will be shown as two squares, highlighted in red.</p>
-            <p> <a style="color:red;">Update 9/28/2022</a>: This is currently a work in progress, it only has 2 puzzles currently. More coming soon!</p>
+            <p> <a style="color:red;">Update 9/29/2022</a>: This is currently a work in progress, it only has 6 puzzles currently. More coming soon!</p>
         </div>
         <div>
             <chess-board id="board"></chess-board>
@@ -43,18 +43,35 @@
     var board_fens = [
         "r4rk1/1ppq2p1/pbnppn1p/4p3/1P2P2B/P1NP1N1P/2P2PP1/R2Q1RK1",
         "r1bq1rk1/pp2npbp/3pp1p1/3P2B1/4P3/2NB4/PP1Q1PPP/R4RK1",
+        "r4rk1/pp1qbppp/2p5/8/2Q2B2/3P1R2/PPP3PP/R5K1",
+        "r4rk1/ppp2ppp/3p1n2/3Pp1q1/P7/2PQ2Pb/2B2P1P/R4RK1",
+        "r4rk1/pppq1ppp/2n1bn2/2bpp3/4P3/P1NP1B1P/1PPB1PP1/R2QK1NR",
+        "r2q1rk1/1p3pp1/p1n1pnp1/2bp4/3N1BP1/2N1PP2/PPPQ3P/R3K2R",
+
     ];
     var sq1s = [
         "f8",
         "c1",
+        "f8",
+        "f8",
+        "e8",
+        "d8",
     ];
     var sq2s = [
         "e8",
         "e1",
+        "e8",
+        "e8",
+        "d8",
+        "c8",
     ];
     var orientations = [
         "black",
         "white",
+        "black",
+        "black",
+        "black",
+        "black",
     ];
 
     // TODO: Generate puzzles randomly instead of same order everytime
