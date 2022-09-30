@@ -62,27 +62,27 @@
     var board_fen = null;
     var sq1 = null;
     var sq2 = null;
-    var orientation = 'black'; // First puzzle is black
+    var orientation = null; // First puzzle is black
 
-
-    function updatePuzzleInfo() {
-        board_fen = board_fens[puzzle_num];
-        sq1 = sq1s[puzzle_num];
-        sq2 = sq2s[puzzle_num];
-        orientation = orientations[puzzle_num];
-    }
     function setPuzzlePos() {
         console.log(board);
         board.clear();
         board.setPosition(board_fen);
-        board.orientation = orientation;
+
+        // Try "flip" work-around
+        if (board.orientation != orientation) {
+            board.flip();
+        }
+        //board.orientation = orientation;
     }
-    function updatePuzzleNum() {
-        console.log(puzzle_num);
-        console.log(board_fens.length);
+    function getNextPuzzle() {
         if (puzzle_num < board_fens.length - 1) {
             puzzle_num = puzzle_num + 1;
         }
+        board_fen = board_fens[puzzle_num];
+        sq1 = sq1s[puzzle_num];
+        sq2 = sq2s[puzzle_num];
+        orientation = orientations[puzzle_num];
     }
     //setPuzzlePos();
 
@@ -113,12 +113,15 @@
         updateHighlights();
     }
 
-    function nextPuzzle() {
+    function removeHighlights() {
         styles.push(unhighlight(sq1));
         styles.push(unhighlight(sq2));
         updateHighlights();
-        updatePuzzleNum();
-        updatePuzzleInfo();
+    }
+
+    function goToNextPuzzle() {
+        removeHighlights();
+        getNextPuzzle();
         setPuzzlePos();
     }
 
@@ -126,7 +129,7 @@
         () => showSquares());
         
     newBtn.addEventListener('click',
-        () => nextPuzzle());
+        () => goToNextPuzzle());
 
 
 </script>
