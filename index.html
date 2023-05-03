@@ -2,184 +2,122 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Zane Durante Homepage</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zane Durante - Machine Learning Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="page-top" class="index">
-
-    
-    <!-- Header -->
+<body>
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/backyard_headshot_horiz.jpg" style="width:300px;"alt="Me standing in my parents' backyard back home in Missouri">
-                    <div class="intro-text">
-                        <span class="name">Hey there!</span>
-                        <hr class="star-light">
-                        <span class="skills">Zane Durante </br> Machine Learning Researcher - Computer Science PhD Student</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <h1>Zane Durante - Machine Learning Researcher</h1>
+        <img src="img/profile.jpg" alt="Zane's picture" class="profile-image">
+
     </header>
-
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
+    
+    <nav>
+        <ul>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#funstuff">Fun Stuff</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content-container">
+      <section id="bio">
+          <h2>Bio</h2>
+          <p>My name is Zane Durante, and I am currently a second-year PhD student at Stanford University, advised by <a href="https://en.wikipedia.org/wiki/Fei-Fei_Li" style="color:white;">Fei-Fei Li</a>.  My research interests are in multimodal visual understanding and 
+            applying artificial intelligence to improve healthcare. I am also broadly interested in creating AI systems that can reason about multiple input modalities and in applying AI for social good.</p>
+      </section>
+      <section id="publications">
+        <h2>Publications</h2>
+        <div class="publication">
+            <div class="publication-info">
+                <h4 style="font-size: 20px;">MOMA-LRG: Language-Refined Graphs for Multi-Object Multi-Actor Activity Parsing</h4>
+                <p style="font-size: 20px; font-style: italic;">2022 NeurIPS</p>
+                <p>Z. Luo, <b>Zane Durante</b>, L. Li, W. Xie, R. Liu, E. Jin, Z. Huang, L.Y. Li, J. Wu, J.C. Niebles, E. Adeli, L. Fei-Fei </p>
+                <p>
+                    <a href="https://github.com/StanfordVL/moma" target="_blank">Code</a> |
+                    <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/22c16986b2f50af520f56dc34d91e403-Paper-Datasets_and_Benchmarks.pdf" target="_blank">PDF</a>
+                </p>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>My name is Zane Durante, and I am currently a second-year PhD student at Stanford University, advised by <a href="https://en.wikipedia.org/wiki/Fei-Fei_Li" style="color:white;">Fei-Fei Li</a>.  My research interests are in multimodal video understanding and applying artificial intelligence to improve healthcare.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>For fun, I love to play games with friends.  My favorite genre of games is strategy (with my personal favorites being <a href="https://www.chess.com/member/zanedurante" style="color:white;">chess</a>, <a href="https://civilization.com/"style="color:white;"> Civilization</a>, and <a href="https://www.ageofempires.com/"style="color:white;">Age of Empires</a>), but really I'll play anything :)</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <!-- <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a> -->
-                </div>
-            </div>
+            <img src="img/pub_imgs/moma-lrg.jpg" alt="MOMA-LRG Thumbnail" class="publication-thumbnail">
         </div>
-    </section>
-
-    <section id="fun">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Fun stuff</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <div style="text-align: center; ">Check out my "chess hub" <a href="chess.html">here!</a> </div>
-                </div>
-            </div>
-    </section>
-
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Projects</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <div style="text-align: center; ">This section is empty for now, while I am still building my website.  You can check my <a href="https://scholar.google.com/citations?user=qxH2dTsAAAAJ&hl=en&oi=ao"> google scholar</a> for past research projects.</div>
-                </div>
-            </div>
-            <!-- 
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
+        <div class="publication">
+          <div class="publication-info">
+              <h4 style="font-size: 20px;">Causal Indicators for Assessing the Truthfulness of Child Speech in Forensic Interviews</h4>
+              <p style="font-size: 20px; font-style: italic;">2022 CSPL Vol 71</p>
+              <p><b>Zane Durante</b>, V Ardulov, M Kumar, J Gongola, T Lyon, S Narayanan </p>
+              <p>
+                  <a href="https://www.sciencedirect.com/science/article/pii/S0885230821000693" target="_blank">Paper link</a>
+              </p>
+          </div>
+          <img src="img/pub_imgs/deception_distribution.PNG" alt="MOMA-LRG Thumbnail" class="publication-thumbnail">
+      </div>     
+      <div class="publication">
+        <div class="publication-info">
+            <h4 style="font-size: 20px;">Speech Representations and Phoneme Classification for Preserving the Endangered Language of Ladin</h4>
+            <p style="font-size: 20px; font-style: italic;">2021 MLSLP</p>
+            <p><b>Zane Durante</b>, L. Mathur, E. Ye, S. Zhao, T. Ramdas, K. Iskarous </p>
+            <p>
+                <a href="https://arxiv.org/abs/2108.12531" target="_blank">arXiv</a>
+            </p>
         </div>
-        -->
-    </section>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
-
+        <img src="img/pub_imgs/ladin.PNG" alt="MOMA-LRG Thumbnail" class="publication-thumbnail">
+    </div>    
+    <div class="publication">
+      <div class="publication-info">
+          <h4 style="font-size: 20px;">Identifying Truthful Language in Child Interviews</h4>
+          <p style="font-size: 20px; font-style: italic;">2020 ICASSP</p>
+          <p>V. Ardulov, <b>Zane Durante</b>, S. Williams, T. Lyon, S. Narayanan </p>
+          <p>
+              <a href="https://ieeexplore.ieee.org/document/9053386" target="_blank">Paper link</a>
+          </p>
+      </div>
+      <img src="img/pub_imgs/interview.PNG" alt="MOMA-LRG Thumbnail" class="publication-thumbnail">
+  </div> 
+  <div class="publication">
+    <div class="publication-info">
+        <h4 style="font-size: 20px;">Canagliflozin Inhibits Human Endothelial Cell Proliferation and Tube Formation
+        </h4>
+        <p style="font-size: 20px; font-style: italic;">2019 Frontiers in Pharmacology, Vol 10</p>
+        <p>G. Behnammanesh, <b>Zane Durante</b>, K. Peyton, L. Martinez-Lemus, S. Brown, S. Bender, W. Durante</p>
+        <p>
+            <a href="https://www.frontiersin.org/articles/10.3389/fphar.2019.00362/full" target="_blank">Paper link</a>
+        </p>
+    </div>
+    <img src="img/pub_imgs/angiogensis_final.PNG" alt="MOMA-LRG Thumbnail" class="publication-thumbnail", style="height: 150px;">
+</div> 
+  <div class="publication">
+    <div class="publication-info">
+        <h4 style="font-size: 20px;">Heme Oxygenase-1-Derived Bilirubin Counteracts HIV Protease Inhibitor-Mediated Endothelial Cell Dysfunction
+        </h4>
+        <p style="font-size: 20px; font-style: italic;">2016 Free Radical Biology and Medicine, Vol 91</p>
+        <p>X.M. Liu, <b>Zane Durante</b>, K. Peyton, W. Durante</p>
+        <p>
+            <a href="https://www.sciencedirect.com/science/article/pii/S089158491600099X" target="_blank">Paper link</a>
+        </p>
+    </div>
+    <img src="img/pub_imgs/ec_function.jpg" alt="MOMA-LRG Thumbnail" class="publication-thumbnail", style="height: 150px;">
+</div> 
+         
+      <section id="funstuff">
+          <h2>Fun Stuff</h2>
+          <p>For fun, I love to play games with friends.  My personal favorite games are Overwatch, <a href="https://www.chess.com/member/zanedurante" style="color:white;">Chess</a>, Civilization, and Age of Empires, but really I'll play anything :)</p>
+          <p>Feel free to check out some of the game puzzles I've made <a href="hub.html">here</a>.</p>
+        </section>
+      
+      <section id="contact">
+          <h2>Contact</h2>
+          <p>Email: zanedurante (at) gmail (dot) com</p>
+      </section>
+    </div>
+    <footer>
+        <p>&copy; Zane Durante. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

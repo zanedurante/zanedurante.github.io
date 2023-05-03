@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <script type="module" src="https://unpkg.com/chessboard-element?module"></script>
+    <link rel="stylesheet" href="site.css">
+</head>
+
+
+<style>
+    #board {
+        margin: auto;
+        width: 60%;
+        max-width: 500px;
+    }
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20%;
+    }
+
+</style>
+
+<html>
+    <body>
+        <container style="justify-content:center; align-items: center; text-align:center;">
+            <h1>Zane's Game Hub</h1>
+                <p style="margin-left: auto; margin-right: auto; width: 50em">What is this website?  What are you doing here??  Well, I can only answer the first question. Here, I plan to post all sorts of unique game content!  In particular, I have been following the habits series 
+                    by Chessbrah, and I think this is one of the most fun and educational chess series I've ever seen.  So, I plan to put puzzles/lessons on this website that can help reinforce
+                this strategy of learning across many different games.  This is mainly intended for personal use, but I hope others (like you) will find this equally helpful and fun.</p>
+            <h2>Overwatch Content</h2>
+            <p  style="margin-left: auto; margin-right: auto; width: 50em">Following Chessbrah's habits series, I am embarking upon my own journey learning Moira in Overwatch 2.  I am trying to stick to a set of rules to follow.  Here is a <a href="https://docs.google.com/presentation/d/1hFuBbvbDZQJ9jnIm8-qttoqJzqTpdxFLoEHMJ1o8pqY/edit?usp=sharing">link</a> to the first set of rules I am using for starting out!</p>
+            <h2>Connect-4 Content</h2>
+            <p  style="margin-left: auto; margin-right: auto; width: 50em">Coming soon!</p>
+            <p style="margin-left: auto; margin-right: auto; width: 50em">I have a version of Connect-4 puzzles that run locally on my laptop in Python.  The basic idea is they are similar to Mate in X puzzles for chess, but for Connect 4! I am planning to post them on this website soon.</p>
+            <p style="margin-left: auto; margin-right: auto; width: 50em">I also previously made a bot for playing Connect 4 (<a href="https://www.kaggle.com/code/zanedurante/intelligent-monte-carlo/notebook?scriptVersionId=33174291">link</a> to my submission to the Connect X Kaggle competition).  So, I may provide an option to play with the bot too. I think the puzzles are higher priority though.</p>
+            <h2>Chess Content</h2>
+            <p style="margin-left: auto; margin-right: auto; width: 50em"><a href="rooks.html">Click here</a> for the rooks puzzle</p>
+            <p style="margin-left: auto; margin-right: auto; width: 50em"><a href="board.html">Click here</a> for an empty chess board to play on</p>
+            </container>
+    </body>
+</html>
+
+<script>
+    startBtn.addEventListener('click',
+        () => board.start());
+        
+    clearBtn.addEventListener('click',
+        () => board.clear());
+</script>

@@ -87,7 +87,7 @@
         board.setPosition(board_fen);
 
         // Try "flip" work-around
-        if (board.orientation != orientation) {
+        while (board.orientation != orientation) {
             board.flip();
         }
         //board.orientation = orientation;
